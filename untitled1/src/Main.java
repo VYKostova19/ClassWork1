@@ -1,13 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
-        Scanner scan = new Scanner(System.in);
-        String brand = scan.nextLine();
-        String model = scan.nextLine();
-        car.start(brand, model);
+        Cat cat = new Cat();
+        Dog dog = new Dog(10, 12.5, "German Sheppard");
 
+        List<Animal> animals = new ArrayList<>();
+
+        animals.add(cat);
+        animals.add(dog);
+
+        cat.test();
     }
-
 }
